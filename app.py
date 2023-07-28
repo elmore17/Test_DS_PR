@@ -2,10 +2,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
-import joblib
 import os
-import tarfile
-import urllib.request
 
 # Загрузка данных
 # url = "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz"
