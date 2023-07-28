@@ -1,7 +1,7 @@
 import joblib
 import tensorflow as tf
 import os
-import main
+import app
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from flask import Flask, render_template, request
@@ -52,8 +52,8 @@ def index():
     if request.method == 'POST':
         username = request.form.get('comment')
         comment = username
-        user_data = main.preprocess_user_data(comment, tokenizer, max_sequence_length)
-        prediction = main.get_prediction(model, user_data)
+        user_data = app.preprocess_user_data(comment, tokenizer, max_sequence_length)
+        prediction = app.get_prediction(model, user_data)
         messageScore = str(prediction)[2]
         if prediction >= 0.5:
             sentiment = "Положительный комментарий."
