@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+
+body{
+    background: pink;
+    font-family: 'Borel', cursive;
+}
+
+.colorBlock{
+    margin: 5px auto;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+    font-family: 'Borel', cursive;
+}
+
+form{
+    text-align: center;
+    font-family: 'Borel', cursive;
+}
+
+.form{
+    display: grid!important;
+}
+
+input{
+    border-radius: 15px;
+    font-family: 'Borel', cursive;
+}
